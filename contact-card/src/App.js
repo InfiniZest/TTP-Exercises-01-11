@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import CreateContactCard from './CreateContactCard.js';
-// import ContactLibrary './ContactLibrary.js';
 
 /*
  * 1) (Done) Define a ContactCard component that takes in a contact name,
@@ -13,19 +12,12 @@ import CreateContactCard from './CreateContactCard.js';
 
 // Wait for input
 function App() {
-  // if there is nothing in the library, run the Create 
+  let cardNumber = 0;
   return (
-    // Load Input Component when pressing create new contact button
-    // ContactLibrary will load to createcontact component if there is no contacts in lib
-    /*
-    <div className="ContactLib">
-        <ContactLibrary />
-    </div>
-    */
     <div className="InputFrame">
-        <CreateContactCard />
+        <CreateContactCard id={cardNumber.toString()}/>
     </div>
-  );
+    );
 }
 
 export default App;

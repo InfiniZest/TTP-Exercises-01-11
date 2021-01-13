@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ContactLibrary from './ContactLibrary.js';
 
 class CreateContactCard extends React.Component {
     constructor(props) {
@@ -47,6 +48,7 @@ class CreateContactCard extends React.Component {
                     <h3>{this.state.mobileNumb}</h3>
                     <h3>{this.state.workNumb}</h3>
                     <h3>{this.state.email}</h3>
+                    <button type="button" onClick={() => {<ContactLibrary />}}> Finish </button>
                 </div>
             );
         }
